@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./chat-side-user-item.component.sass']
 })
 export class ChatSideUserItemComponent implements OnInit {
-  @Input() user = {};
+  @Input() user: { avatar: string, name: string, online: boolean };
 
   constructor() { }
 

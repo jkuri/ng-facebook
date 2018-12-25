@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-side.component.sass']
 })
 export class ChatSideComponent implements OnInit {
-  users: any[] = [];
+  users: { avatar: string, name: string, online: boolean }[] = [];
 
   constructor() { }
 
