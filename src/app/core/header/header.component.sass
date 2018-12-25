@@ -1,0 +1,122 @@
+@import 'typography'
+@import 'colours'
+@import 'variables'
+
+\:host
+  width: 100%
+  height: $header-height
+  background: $background-header
+  display: flex
+  align-items: center
+  box-shadow: 1px 2px 3px rgba($black, .2)
+  z-index: 100
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+
+  .container
+    height: $header-height
+
+  .header-container
+    display: flex
+    align-items: center
+    flex-direction: row
+    align-items: stretch
+    height: 100%
+    width: 100%
+
+    .header-left
+      width: 100px
+      display: flex
+      align-items: center
+
+      i
+        color: $white
+        font-size: 34px
+        cursor: pointer
+
+    .header-center
+      flex: 1
+      display: flex
+      align-items: center
+      justify-content: flex-end
+
+      .search
+        width: 100%
+        position: relative
+        height: $header-height
+        display: flex
+        align-items: center
+
+        i
+          color: $white
+          font-size: 18px
+          position: absolute
+          display: block
+          right: 20px
+          top: 20px
+
+      .links
+        border-left: 1px solid $border-header
+        height: $header-height
+        display: flex
+        align-items: center
+        padding: 0 20px
+
+        .link
+          padding: 0 16px
+          display: flex
+          align-items: center
+          height: $header-height
+          cursor: pointer
+
+          span
+            font-size: 15px
+            color: $white
+            font-family: $font-family-regular
+            padding: 0 0 0 10px
+
+          img
+            display: block
+            width: 25px
+            height: 25px
+            border-radius: 2px
+            margin-right: 10px
+
+    .header-right
+      width: 300px
+      border-left: 1px solid $border-header
+      display: flex
+      align-items: center
+      padding-left: 20px
+
+      .header-item
+        width: 20px
+        height: 20px
+        margin: 0 12px
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        position: relative
+
+        i
+          color: $white
+          font-size: 20px
+          display: block
+
+        .bubble
+          position: absolute
+          top: -8px
+          right: -8px
+          color: $white
+          background: $red
+          border-radius: 50%
+          padding: 0 5px
+          line-height: 16px
+          font-size: 10px
+          font-family: $font-family-bold
+          border: 2px solid $background-header
+          display: block
+          text-align: center
