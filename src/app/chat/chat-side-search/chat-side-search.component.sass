@@ -1,0 +1,39 @@
+@import 'colours'
+@import 'typography'
+@import 'mixins'
+
+\:host
+  position: absolute
+  z-index: 100
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  border-top: 1px solid $border-primary
+  height: 60px
+  background: $background
+
+  .chat-side-search-container
+    height: 60px
+    width: 100%
+    display: flex
+    align-items: center
+
+    input
+      outline: none
+      border: none
+      padding: 10px 40px 10px 10px
+      width: 100%
+      background: transparent
+      font-size: 14px
+      color: $text-secondary
+      @include placeholder
+        color: $text-light
+        font-family: $font-family-medium
+
+    i
+      color: $text-light
+      font-size: 18px
+      right: 10px
+      top: 21px
+      position: absolute
